@@ -21,6 +21,9 @@ Start the server:
 uvicorn app.main:app --reload --port 8000
 ```
 
+Create an advanced analytics connection in Qlik Sense Cloud pointing to your server:
+https://help.qlik.com/en-US/cloud-services/Subsystems/Hub/Content/Sense_Hub/LoadData/ac-advanced-analytic-create.htm
+
 ## API Endpoints
 
 ### GET /
@@ -55,6 +58,9 @@ Processes time series data and returns forecasted values. Meant to be used in th
     "yhat": string       // "yhat", "yhat_lower", or "yhat_upper" (default: "yhat")
 }]
 ```
+
+## Demo app
+You can find a demo app called "Prophet.qvf" included in this repository.
 
 ## Example Qlik Front End Expression
 ```qlik
